@@ -1,20 +1,18 @@
 $(document).ready(function () {
-    // Add a click event listener to each option
-    $('.option').on('click', function () {
-        // Disable all options
-        $('.option').off('click');
-        
-        // Determine if the answer is correct (modify this logic as needed)
-        var selectedOption = $(this);
-        var isCorrect = /* Your logic to determine correctness */;
+  $(".option").on("click", function () {
+    $(".option").off("click");
 
-        // Display feedback
-        if (isCorrect) {
-            selectedOption.addClass('correct');
-            $('.feedback').text('Correct!');
-        } else {
-            selectedOption.addClass('incorrect');
-            $('.feedback').text('Incorrect. Try again.');
-        }
-    });
+    var selectedOption = $(this);
+    var isCorrect = selectedOption.data("correct"); // Check if the data attribute 'correct' is true
+
+    if (isCorrect) {
+      selectedOption.addClass("correct");
+      $(".feedback").text(
+        "Correct! Super Mario Bros. is a classic Nintendo game."
+      );
+    } else {
+      selectedOption.addClass("incorrect");
+      $(".feedback").text("Incorrect. Try again.");
+    }
+  });
 });
