@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Quiz App</title>
+    <title>Quiz app</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-    <h1>Quiz Title</h1>
+    <h1>Quiz App - Nintendo Edition</h1>
     <div class="quiz">
+      <p class="question"></p>
       <ul class="options">
-        <li class="option" data-correct="true">Super Mario Bros.</li>
-        <li class="option" data-correct="false">The Legend of Zelda</li>
-        <li class="option" data-correct="false">Metroid Prime</li>
-        <li class="option" data-correct="false">Pokemon Red</li>
+        <li class="option"></li>
+        <li class="option"></li>
+        <li class="option"></li>
+        <li class="option"></li>
       </ul>
       <p class="feedback"></p>
+      <button id="nextButton">Next Question</button>
+      <button class="resetButton">Reset Game</button>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>

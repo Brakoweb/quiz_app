@@ -1,41 +1,72 @@
 body {
+  font-family: "Press Start 2P", cursive;
+  background-color: #000;
+  background-image: url("bg.jpg");
+  color: #fff;
   text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 20px 0;
 }
 
 .quiz {
-  margin: 20px;
+  background-color: #003;
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f7f7f7;
+  border: 2px solid #e00;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 400px;
 }
 
-.options {
+ul.options {
   list-style: none;
   padding: 0;
 }
 
-.option {
-  margin: 10px;
+li.option {
+  font-size: 18px;
+  background-color: #00f;
+  color: #fff;
   padding: 10px;
-  background-color: #e0e0e0;
+  margin: 5px 0;
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: background-color 0.3s;
 }
 
-.option:hover {
-  background-color: #c0c0c0;
+li.option:hover {
+  background-color: #f00;
 }
 
-.feedback {
-  margin: 10px;
-  font-weight: bold;
+p.feedback {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #fff;
 }
 
-.correct {
+p.feedback .correct {
   color: green;
 }
 
-.incorrect {
+p.feedback .incorrect {
   color: red;
+}
+
+button {
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #f00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #f00;
 }
