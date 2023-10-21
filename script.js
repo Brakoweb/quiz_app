@@ -87,12 +87,12 @@ $(document).ready(function () {
     var correctAnswer = questions[currentQuestion].answer;
 
     if (selectedOption === correctAnswer) {
-      $(this).addClass("correct");
+      $(".feedback").addClass("correct");
       $(".feedback").text("Correct!");
       score += 1000;
       updateScore();
     } else {
-      $(this).addClass("incorrect");
+      $(".feedback").addClass("incorrect");
       $(".feedback").text("Incorrect. The correct answer is: " + correctAnswer);
     }
 
@@ -103,9 +103,9 @@ $(document).ready(function () {
   $("#nextButton").on("click", function () {
     if (currentQuestion < questions.length - 1) {
       currentQuestion++;
-      console.log(currentQuestion);
       displayQuestion(currentQuestion);
       $(".option").removeClass("correct incorrect");
+      $(".feedback").removeClass("correct incorrect");
       $(".feedback").text("");
       $("#nextButton").hide();
       $(".option").on("click");
@@ -126,6 +126,7 @@ $(document).ready(function () {
     displayQuestion(currentQuestion);
     updateScore();
     $(".option").removeClass("correct incorrect");
+    $(".feedback").removeClass("correct incorrect");
     $(".feedback").text("");
     $("#nextButton").hide();
     $(".options").show();

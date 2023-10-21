@@ -16,7 +16,7 @@ h1 {
 .quiz {
   background-color: #003;
   padding: 20px;
-  border: 2px solid #e00;
+  border: 4px solid rgb(0, 0, 0);
   border-radius: 10px;
   margin: 20px auto;
   max-width: 400px;
@@ -47,11 +47,11 @@ p.feedback {
   color: #fff;
 }
 
-p.feedback .correct {
+p.feedback.correct {
   color: green;
 }
 
-p.feedback .incorrect {
+p.feedback.incorrect {
   color: red;
 }
 
