@@ -110,6 +110,7 @@ $(document).ready(function () {
       $("#nextButton").hide();
       $(".option").on("click");
     } else {
+      $(".feedback").removeClass("correct incorrect");
       $(".question").text(
         "Congratulations! You have answered all the questions."
       );
